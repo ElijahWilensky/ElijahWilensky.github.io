@@ -5,7 +5,7 @@
         <title>HTML basics</title>
         <style>
             h1 {
-            background-color: rgb(0,0,255);
+            background-color: rgb(0,100,255);
             }
         </style>
     </head>
@@ -14,5 +14,12 @@
 
     </body>
 </html>
-<javascript>
-    
+fill(255, 234, 0);
+    ellipse(faceObj.centerX, faceObj.centerY, 150, 150);
+    fill(0, 0, 0);
+    ellipse(faceObj.centerX-30, faceObj.centerY-30, 20, 20); 
+    ellipse(faceObj.centerX+30, faceObj.centerY-30, 20, 20); 
+    noFill(); 
+    strokeWeight(3);
+    arc(faceObj.centerX, faceObj.centerY+10, 64, 40, 0, 180);
+};
