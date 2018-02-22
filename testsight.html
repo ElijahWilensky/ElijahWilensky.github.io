@@ -14,24 +14,24 @@
         <script src="https://cdn.jsdelivr.net/processing.js/1.4.8/processing.min.js"></script> 
  
  <script>
-    var sketchProc = function(processingInstance) {
-    with (processingInstance) {
-        var drawSmiley = function(faceObj) {
-            fill(255, 234, 0);
-            ellipse(faceObj.mouseX, faceObj.mouseY, 150, 150);
-            fill(0, 0, 0);
-            ellipse(faceObj.mouseX-30, faceObj.mouseY-30, 20, 20); 
-            ellipse(faceObj.mouseX+30, faceObj.mouseY-30, 20, 20); 
-            noFill(); 
-            strokeWeight(3);
-            arc(faceObj.mouseX, faceObj.mouseY+10, 64, 40, 0, 180);
-            }
-        var SmileyFace= function(mouseX,mouseY){
-            this.mouseX=mouseX;
-            this.mouseY=mouseY;
-            }
-        drawSmiley(SmileyFace(100,100));
-        };
+    var SmileyFace = function(a,b){
+    this.centerX=a;
+    this.centerY=b;
+
+};
+
+SmileyFace.prototype.draw = function() {
+    fill(255, 234, 0);
+    ellipse(this.centerX, this.centerY, 150, 150);
+    fill(0, 0, 0);
+    ellipse(this.centerX-30, this.centerY-30, 20, 20); 
+    ellipse(this.centerX+30, this.centerY-30, 20, 20); 
+    noFill(); 
+    strokeWeight(3);
+    arc(this.centerX, this.centerY+10, 64, 40, 0, 180);
+};
+var face = new SmileyFace(100,100);
+face.draw();
         </script>
     </body>
 </html>
