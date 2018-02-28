@@ -12,28 +12,32 @@
     <body>
         <h1> </h1>
         <script src="https://cdn.jsdelivr.net/processing.js/1.4.8/processing.min.js"></script> 
- 
- <script>
-    fill(20,20,20);
-    rect(300,300,50,50);
-    var SmileyFace = function(a,b){
-    this.centerX=a;
-    this.centerY=b;
+        <canvas>
+        fill(20,20,20);
+        rect(300,300,50,50);
+            
+        </canvas>
+        <script>
+            <canvas>
+            </canvas>
+            var SmileyFace = function(a,b){
+                this.centerX=a;
+                this.centerY=b;
+            };
 
-};
-
-    SmileyFace.prototype.draw = function() {
-        fill(255, 234, 0);
-        ellipse(this.centerX, this.centerY, 150, 150);
-        fill(0, 0, 0);
-        ellipse(this.centerX-30, this.centerY-30, 20, 20); 
-        ellipse(this.centerX+30, this.centerY-30, 20, 20); 
-        noFill(); 
-        strokeWeight(3);
-        arc(this.centerX, this.centerY+10, 64, 40, 0, 180);
-    };
-    var face = new SmileyFace(100,100);
-    face.draw();
+            SmileyFace.prototype.draw = function() {
+                fill(255, 234, 0);
+                ellipse(this.centerX, this.centerY, 150, 150);
+                fill(0, 0, 0);
+                ellipse(this.centerX-30, this.centerY-30, 20, 20); 
+                ellipse(this.centerX+30, this.centerY-30, 20, 20); 
+                noFill(); 
+                strokeWeight(3);
+                arc(this.centerX, this.centerY+10, 64, 40, 0, 180);
+            };
+            testsight.body.appendChild(SmileyFace);
+            var face = new SmileyFace(100,100);
+            face.draw();
         </script>
     </body>
 </html>
