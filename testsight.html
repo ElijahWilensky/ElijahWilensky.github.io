@@ -18,8 +18,8 @@
             
         </canvas>
         <script>
-            <canvas>
-            </canvas>
+            //<canvas>
+            //</canvas>
             var SmileyFace = function(a,b){
                 this.centerX=a;
                 this.centerY=b;
@@ -35,9 +35,9 @@
                 strokeWeight(3);
                 arc(this.centerX, this.centerY+10, 64, 40, 0, 180);
             };
-            testsight.body.appendChild(SmileyFace);
             var face = new SmileyFace(100,100);
             face.draw();
+            document.body.appendChild(face);
         </script>
     </body>
 </html>
