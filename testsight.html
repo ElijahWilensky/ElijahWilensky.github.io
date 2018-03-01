@@ -1,43 +1,73 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>HTML basics</title>
-        <style>
-            h1 {
-            background-color: rgb(0,100,255);
-            }
-        </style>
-    </head>
-    <body>
-        <h1> asdfasdf</h1>
-        <script src="https://cdn.jsdelivr.net/processing.js/1.4.8/processing.min.js"></script> 
-        <canvas>
-        fill(20,20,20);
-        rect(300,300,50,50);
-            
-        </canvas>
-        <script>
-            //<canvas>
-            //</canvas>
-            var SmileyFace = function(a,b){
-                this.centerX=a;
-                this.centerY=b;
-            };
+<body>
 
-            SmileyFace.prototype.draw = function() {
-                fill(255, 234, 0);
-                ellipse(this.centerX, this.centerY, 150, 150);
-                fill(0, 0, 0);
-                ellipse(this.centerX-30, this.centerY-30, 20, 20); 
-                ellipse(this.centerX+30, this.centerY-30, 20, 20); 
-                noFill(); 
-                strokeWeight(3);
-                arc(this.centerX, this.centerY+10, 64, 40, 0, 180);
-            };
-            var face = new SmileyFace(100,100);
-            face.draw();
-            document.body.appendChild(face);
-        </script>
-    </body>
+<canvas id="myCanvas" width="550" height="350" style="border:1px solid #d3d3d3;">
+Your browser does not support the HTML5 canvas tag.</canvas>
+
+<script>
+
+var c = document.getElementById("myCanvas");
+var smile = c.getContext("2d");
+smile.beginPath();
+smile.fillStyle="Yellow";
+smile.arc(100,100,30,0,2*Math.PI);
+smile.fill();
+smile.stroke()
+smile.beginPath();
+smile.fillStyle="Black";
+smile.arc(90,95,5,0,2*Math.PI);
+smile.arc(110,95,5,0,2*Math.PI);
+smile.fill();
+smile.beginPath();
+smile.arc(100,100,20,0,Math.PI);
+smile.stroke();
+smile.beginPath();
+smile.fillStyle=("Red");
+var fr= smile.arc(100,100,60,Math.PI*15/8,Math.PI*17/8);
+smile.fill();
+smile.stroke();
+smile.beginPath();
+smile.fillStyle=("Blue");
+var br= smile.arc(100,100,60,Math.PI*1/8,Math.PI*3/8);
+smile.fill();
+smile.stroke();
+smile.beginPath();
+smile.fillStyle=("Green");
+var fb = smile.arc(100,100,60,Math.PI*3/8,Math.PI*5/8);
+smile.fill();
+smile.stroke();
+smile.beginPath();
+smile.fillStyle=("Blue");
+var bl = smile.arc(100,100,60,Math.PI*5/8,Math.PI*7/8);
+smile.fill();
+smile.stroke();
+smile.beginPath();
+smile.fillStyle=("Red");
+var fl = smile.arc(100,100,60,Math.PI*7/8,Math.PI*9/8);
+smile.fill();
+smile.stroke();
+smile.beginPath();
+smile.fillStyle=("Blue");
+var tl = smile.arc(100,100,60,Math.PI*9/8,Math.PI*11/8);
+smile.fill();
+smile.stroke();
+smile.beginPath();
+smile.fillStyle=("Red");
+var  = smile.arc(100,100,60,Math.PI*9/8,Math.PI*11/8);
+smile.fill();
+smile.stroke();
+smile.beginPath();
+smile.fillStyle=("Red");
+
+
+
+
+//ctx.
+//ctx.stroke();
+
+</script> 
+
+</body>
 </html>
+
