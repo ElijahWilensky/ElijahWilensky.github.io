@@ -8,66 +8,65 @@ Your browser does not support the HTML5 canvas tag.</canvas>
 <script>
 
 var c = document.getElementById("myCanvas");
+var xx= 100;
+var yy = 100;
+var rr=30;
 var smile = c.getContext("2d");
 smile.beginPath();
 smile.fillStyle="Yellow";
-smile.arc(100,100,30,0,2*Math.PI);
+smile.arc(xx,yy,rr,0,2*Math.PI);
 smile.fill();
 smile.stroke()
 smile.beginPath();
 smile.fillStyle="Black";
-smile.arc(90,95,5,0,2*Math.PI);
+smile.arc(xx-10,yy-5,rr/6,0,2*Math.PI);
 smile.arc(110,95,5,0,2*Math.PI);
 smile.fill();
 smile.beginPath();
 smile.arc(100,100,20,0,Math.PI);
 smile.stroke();
 smile.beginPath();
-smile.fillStyle=("Red");
+smile.fillStyle="Red";
 var fr= smile.arc(100,100,60,Math.PI*15/8,Math.PI*17/8);
 smile.fill();
 smile.stroke();
 smile.beginPath();
-smile.fillStyle=("Blue");
+smile.fillStyle="Blue";
 var br= smile.arc(100,100,60,Math.PI*1/8,Math.PI*3/8);
 smile.fill();
 smile.stroke();
 smile.beginPath();
-smile.fillStyle=("Green");
+smile.fillStyle="Green";
 var fb = smile.arc(100,100,60,Math.PI*3/8,Math.PI*5/8);
 smile.fill();
 smile.stroke();
 smile.beginPath();
-smile.fillStyle=("Blue");
+smile.fillStyle="Blue";
 var bl = smile.arc(100,100,60,Math.PI*5/8,Math.PI*7/8);
 smile.fill();
 smile.stroke();
 smile.beginPath();
-smile.fillStyle=("Red");
+smile.fillStyle="Red";
 var fl = smile.arc(100,100,60,Math.PI*7/8,Math.PI*9/8);
 smile.fill();
 smile.stroke();
 smile.beginPath();
-smile.fillStyle=("Blue");
+smile.fillStyle="Blue";
 var tl = smile.arc(100,100,60,Math.PI*9/8,Math.PI*11/8);
 smile.fill();
 smile.stroke();
 smile.beginPath();
-smile.fillStyle=("Red");
-var  = smile.arc(100,100,60,Math.PI*9/8,Math.PI*11/8);
+smile.fillStyle="Green";
+var ft = smile.arc(100,100,60,Math.PI*11/8,Math.PI*13/8);
 smile.fill();
 smile.stroke();
 smile.beginPath();
-smile.fillStyle=("Red");
-
-
-
-
-//ctx.
-//ctx.stroke();
+smile.fillStyle="Blye";
+var tr = smile.arc(100,100,60,Math.PI*13/8,Math.PI*15/8);
+smile.fill();
+smile.stroke();
 
 </script> 
 
 </body>
 </html>
-
