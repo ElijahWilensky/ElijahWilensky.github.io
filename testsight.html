@@ -7,9 +7,22 @@ Your browser does not support the HTML5 canvas tag.</canvas>
 <script>
 var drawSmile= function(e) {
   var c = document.getElementById("myCanvas");
-  var xx= e.clientX-100;
-  var yy = e.clientY-100;
   var rr=30;
+  if (sqrt(Math.pow(e.clientX-200,2)+sqrt(Math.pow(e.clientX-200,2)) ))
+  //if (e.clientX>200-2*rr){
+  	//	if (e.clientX<200+2*rr){
+    	//	var xx= 200;
+  //		}
+    //  if (e.clientY>200+rr){
+    	//var yy = 200;
+    	//}
+   // }
+  //}
+  else{
+  	var xx= e.clientX-2*rr;
+  	var yy = e.clientY-2*rr;
+  
+  }
   var smile = c.getContext("2d");
   smile.clearRect(0, 0, c.width, c.height);
   smile.beginPath();
