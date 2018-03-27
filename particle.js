@@ -23,7 +23,7 @@ d3.timer(function() {
   context.clearRect(0, 0, width, height);
 
   var z = d3.hsl(++i % 360, 1, .5).rgb(),
-      c = "rgba(" + x1 + "," + z.g + "," + z.b + ",",
+      c = "rgba(" + x1 + "," + y1 + "," + z.b + ",",
       x = x0 += (x1 - x0) * .1,
       y = y0 += (y1 - y0) * .1;
 
