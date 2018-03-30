@@ -49,45 +49,45 @@ d3.timer(function() {
           context.strokeStyle = c + (1 - t) + ")";
           context.beginPath();
           context.clearRect(0, 0, width, height);
-          context.arc(x, y, 100, 0, τ);
+          context.arc(x, y, 75, 0, τ);
           context.stroke();
           
          	context.beginPath();
-					context.arc(x, y, 75, 0, τ/2)
+					context.arc(x, y, 75*3/4, 0, τ/2)
           context.stroke();
    				context.beginPath();
-					context.arc(x-35, y-25, 11, 0, τ)
+					context.arc(x-35*3/4, y-25*3/4, 11, 0, τ)
           context.stroke();
           context.beginPath();
-					context.arc(x+35, y-25, 11, 0, τ)
-          context.stroke();
-          context.stroke();
-   				context.beginPath();
-					context.arc(x-35, y-25, 9, 0, τ)
-          context.stroke();
-          context.beginPath();
-					context.arc(x+35, y-25, 9, 0, τ)
+					context.arc(x+35*3/4, y-25*3/4, 11, 0, τ)
           context.stroke();
           context.stroke();
    				context.beginPath();
-					context.arc(x-35, y-25, 7, 0, τ)
+					context.arc(x-35*3/4, y-25*3/4-.00000015*Math.pow(y-height/2,3), 9, 0, τ)
           context.stroke();
           context.beginPath();
-					context.arc(x+35, y-25, 7, 0, τ)
+					context.arc(x+35*3/4, y-25*3/4-.00000015*Math.pow(y-height/2,3), 9, 0, τ)
           context.stroke();
           context.stroke();
    				context.beginPath();
-					context.arc(x-35, y-25, 5, 0, τ)
+					context.arc(x-35*3/4, y-25*3/4-.0000002*Math.pow(y-height/2,3), 7, 0, τ)
           context.stroke();
           context.beginPath();
-					context.arc(x+35, y-25, 5, 0, τ)
+					context.arc(x+35*3/4, y-25*3/4-.0000002*Math.pow(y-height/2,3), 7, 0, τ)
           context.stroke();
           context.stroke();
    				context.beginPath();
-					context.arc(x-35, y-25, 1, 0, τ)
+					context.arc(x-35*3/4, y-25*3/4-.00000025*Math.pow(y-height/2,3), 5, 0, τ)
           context.stroke();
           context.beginPath();
-					context.arc(x+35, y-25, 1, 0, τ)
+					context.arc(x+35*3/4, y-25*3/4-.00000025*Math.pow(y-height/2,3), 5, 0, τ)
+          context.stroke();
+          context.stroke();
+   				context.beginPath();
+					context.arc(x-35*3/4, y-25*3/4-.0000003*Math.pow(y-height/2,3), 1, 0, τ)
+          context.stroke();
+          context.beginPath();
+					context.arc(x+35*3/4, y-25*3/4-.0000003*Math.pow(y-height/2,3), 1, 0, τ)
           context.stroke();
         };
       });
