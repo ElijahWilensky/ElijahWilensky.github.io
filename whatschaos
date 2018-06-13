@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <style>
+    .header {
+      padding-top:150px;
+      padding-bottom:50px;
+      text-align: center;
+    }
+    .writing{
+      padding-left:50px;
+      padding-right:50px;
+    }
+    .subhead{
+      padding-left:50px;
+      padding-right:100px;
+      padding-top:100px;
+      padding-bottom:10px;
+      position:relative;
+    }
+  </style>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="index.css" rel="stylesheet" type="text/css" />
+  </head>
+      <h1 class="header">What is Chaos?</h1>
+      <p class="writing">Chaos, in the mathematical sense, is unpredictablity. According to Edward Lorenz, one of the pioneers of Chaos Theory, chaos is when "the present determines the future, but the approximate present does not approximately determine the future." In short, chaos is present in a system when small changes in the initial conditions of the system lead to extremely different later states. In short, a chaotic system is extremely sensitive to initial conditions.</p>
+      <h1 class="header">What is Chaos Theory</h1>
+      <p class="writing">Chaos Theory is a field of mathematics that concerns highley chaotic systems. Because chaotic systems are so sensitive, it's not really worthwhile, if possible, to predict exact results with formulas that give 100% certainty.</p>
+      <h3 class-"subheading">An example:</h3>
+      <p class="writing">For an example, let's go back to the pendulums watch the video again.</p>
+      <iframe width="420" height="315" src="https://www.youtube.com/embed/tEo45G7XJl0"> </iframe>
+      <p class="writing">As we all know, the force driving the pendulum is modeling gravity. The force acting on the pendulum is trying to accellerate it downwards at arround 9.8m/s<sup>2</sup>. But the end of the pendulum is fixed, so for the first pendulum </p>
+      <p class="writing">Let's just look at the first pendulum segment to start off with. As we all know, the force driving the pendulum is modeling gravity. The force acting on the pendulum is trying to accellerate it downwards at arround 9.8m/s<sup>2</sup>. But the end of the pendulum is fixed, so the force must be broken down into its components like so when calculating its acceleration when it's not completely horizontal</p>
+      <img src="https://i.stack.imgur.com/PIVYu.jpg"></img>
+      <p class="writing">Essentually, what we see for this pendulum is that the sine of the angle times the normal gravitational acceleration gives the actual acceleration, which means that the pendulum will accelerate more towards the horizontals, and less acceleration as it appoches the vertical.</p>
+      <p class="writing"> Ok, but what does this mean if we add more pendulums? Well, each subsequent pendulum is subject to similar rules, except, rather than being fixed at one end, they are attatched to the last pendulum, which means that as they meet resistance going one way, they pull against it, and they drag the last pendulum in the direction that they are decelerating from. this means that if the last two pendulums are going down, but the first pendulum is pointing up and to the right, the two bottom pendulums will be pulled up and to the right, and the first pendulum will swing counter-clockwise.</p>
+      <p class="writing">But wait, this may make it hard to calculate the position at a given time, but how does this make it chaotic?</p>
+      <p class="writing"> The change in position leads to a change in accelleration, which creates a positive feedback loop of difference. especially when one of the </p>
+      <p class="writing"> The change in position leads to a change in accelleration, which creates a positive feedback loop of difference, Especially when one of the end peices is pointing up for a second at a low velocity, which can cause some to go in different directions than others.</p>
+      
+  <body>
+
+    <script src="index.js"></script>
+  </body>
+</html>
